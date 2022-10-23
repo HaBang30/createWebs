@@ -1,0 +1,24 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 600px;
+}
+tr, th, td {
+    border: 1px solid #ADFF2F;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(1) {
+    background-color:#ADFF2F;
+}
+tr:nth-child(3) {
+    background-color:#ADFF2F;
+}
+tr:nth-child(5) {
+    background-color:#ADFF2F;
+}
+tr:nth-child(7) {
+    background-color:#ADFF2F;
+}
+
+
