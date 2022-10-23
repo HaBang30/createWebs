@@ -1,4 +1,4 @@
-table {
+/* table {
     margin: auto;
     border-collapse: collapse;
     width: 600px;
@@ -19,6 +19,20 @@ tr:nth-child(5) {
 }
 tr:nth-child(7) {
     background-color:#ADFF2F;
+} */
+
+form {
+    border: 5px solid #ADD8E6;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
 }
 
+p {
+    font-weight: bolder;
+}
+input[submit]:hover {
+    background: red;
+}
 
