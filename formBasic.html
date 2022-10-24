@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Form Basic</title>
+    <style>
+        table {
+            width: 500px;
+            margin: auto;
+            border: 10px solid #E0FFFF;
+        }
+        th {
+            height: 20px;
+            background-color: #FF4500;
+            color: #FFFFFF;
+            line-height: 20px;
+            font-family: arial;
+        }
+        #subject {
+            text-align: right;
+            color: blue;
+            font-family:arial;
+
+        }
+        input[type=text] {
+            height: 20px;
+            width: 250px;
+            border: 2px;
+            border-style: inset;
+           
+        }
+        input[type=checkbox] {
+            width: 15px;
+            height: 15px;
+        }
+        input[type=submit] {
+            background-color: #F5F5DC;
+            border: 2px;
+            height: 25px;
+            border-style: outset;
+            
+        }
+        input[type=reset] {
+            background-color: #F5F5DC;
+            border: 2px;
+            height: 25px;
+            border-style: outset;
+        }
+        input[type=reset]:hover {
+            background: blue;
+            color: white;
+        }
+        input[type=submit]:hover {
+            background: blue;
+            color: white;
+        }
+        td {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" method="get">
+        <table>
+            <tr>
+                <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td id="subject">Họ và tên</td>
+                <td colspan="3"><input type="text" name="fullName" required ></td>
+            </tr>
+            <tr>
+                <td id="subject">Email</td>
+                <td colspan="3"><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td id="subject">Sở thích</td>
+                <td><input type="checkbox" name="hobby">Thể thao</td>
+                <td><input type="checkbox" name="hobby">Âm nhạc</td>
+                <td><input type="checkbox" name="hobby">Đọc sách</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="hobby">Lướt Web </td>
+                <td><input type="checkbox" name="hobby">Chơi game</td>   
+                <td><input type="checkbox" name="hobby">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="hobby">Du lịch</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
